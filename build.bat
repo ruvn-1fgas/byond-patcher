@@ -1,11 +1,11 @@
 @echo off
 set CXX=g++
-set CXX_FLAGS=-std=c++17 -Ofast
+set CXX_FLAGS=-std=c++17 -Ofast -static-libstdc++ -static-libgcc
 set BIN=bin
 set SRC=src
 set INCLUDE=include
 set LIB=lib
-set EXECUTABLE=BYOND_patcher
+set EXECUTABLE=byond_patcher
 
 if not exist %BIN% mkdir %BIN%
 
